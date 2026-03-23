@@ -1,3 +1,10 @@
+---
+layout: default
+title: Nutrition
+parent: User Manual
+nav_order: 4
+---
+
 [Documentation Home](../index.md) | [User Manual Index](index.md)
 
 # Nutrition

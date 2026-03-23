@@ -1,3 +1,10 @@
+---
+layout: default
+title: Progress
+parent: User Manual
+nav_order: 5
+---
+
 [Documentation Home](../index.md) | [User Manual Index](index.md)
 
 # Progress

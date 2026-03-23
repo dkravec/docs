@@ -1,3 +1,10 @@
+---
+layout: default
+title: Sessions
+parent: User Manual
+nav_order: 2
+---
+
 [Documentation Home](../index.md) | [User Manual Index](index.md)
 
 # Sessions

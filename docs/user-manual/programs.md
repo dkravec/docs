@@ -1,3 +1,10 @@
+---
+layout: default
+title: Programs
+parent: User Manual
+nav_order: 3
+---
+
 [Documentation Home](../index.md) | [User Manual Index](index.md)
 
 # Programs

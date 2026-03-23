@@ -1,3 +1,10 @@
+---
+layout: default
+title: Getting Started
+parent: User Manual
+nav_order: 1
+---
+
 [Documentation Home](../index.md) | [User Manual Index](index.md)
 
 # Getting Started

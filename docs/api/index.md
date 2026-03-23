@@ -1,3 +1,10 @@
+---
+layout: default
+title: API Documentation
+nav_order: 2
+has_children: true
+---
+
 [Documentation Home](../index.md) | [User Manual](../user-manual/index.md)
 
 # GymTracker API

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Endpoints
+parent: API Documentation
+nav_order: 2
+---
+
 [Documentation Home](../index.md) | [API Index](index.md)
 
 # Endpoints

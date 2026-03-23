@@ -1,3 +1,10 @@
+---
+layout: default
+title: Use Cases
+parent: User Manual
+nav_order: 6
+---
+
 [Documentation Home](../index.md) | [User Manual Index](index.md)
 
 # Use Cases

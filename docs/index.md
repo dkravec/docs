@@ -1,30 +1,49 @@
+---
+layout: home
+title: GymTracker Documentation
+nav_order: 1
+description: "Complete reference for GymTracker API and user guide."
+---
+
 # GymTracker Documentation
 
-Clean, practical documentation for product usage and API behavior.
+Complete reference for product usage, API integration, and system architecture.
 
-## Main Sections
+## Getting Started
 
-- [API Documentation](api/index.md)
-  API architecture, endpoints, models, and synchronization strategy.
-- [User Manual](user-manual/index.md)
-  Product walkthrough for workouts, programs, nutrition, and progress.
+Choose your path:
 
-## Quick Start Paths
+- **New Users**: Start with the [User Manual](user-manual/) to learn the app
+- **Developers**: Begin with the [API Documentation](api/) for integration details
 
-- New to the app: [Getting Started](user-manual/getting-started.md)
-- Need session flows: [Sessions](user-manual/sessions.md)
-- Need backend contract: [Endpoints](api/endpoints.md)
-- Need data shapes: [Models](api/models.md)
+## Core Sections
 
-## Documentation Principles
+### [API Documentation](api/)
+Reference for architecture, endpoints, data models, and synchronization strategy.
 
-- Keep pages short and task-focused.
-- Prefer explicit links over implicit references.
-- Use section indexes as stable entry points.
+**Key Pages:**
+- [Architecture](api/architecture.md) — System components overview
+- [Endpoints](api/endpoints.md) — Available routes and behavior
+- [Models](api/models.md) — Core data structures
+- [Sync](api/sync.md) — Offline-first synchronization
+
+### [User Manual](user-manual/)
+Practical walkthrough for workouts, programs, nutrition, and progress tracking.
+
+**Key Pages:**
+- [Getting Started](user-manual/getting-started.md) — First steps
+- [Sessions](user-manual/sessions.md) — Log workouts
+- [Programs](user-manual/programs.md) — Structure training
+- [Nutrition](user-manual/nutrition.md) — Track food
+- [Progress](user-manual/progress.md) — Monitor trends
+- [Use Cases](user-manual/use-cases.md) — Real-world examples
 
 ---
 
-**Section Indexes**
+## Key Principles
 
-- API: [api/index.md](api/index.md)
-- User Manual: [user-manual/index.md](user-manual/index.md)
+Our documentation is built around clarity and discoverability:
+
+- **Task-focused**: Each page covers one clear purpose
+- **Linked**: Navigation between related topics is explicit
+- **Practical**: Examples guide real workflows

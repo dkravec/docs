@@ -1,3 +1,10 @@
+---
+layout: default
+title: Architecture
+parent: API Documentation
+nav_order: 1
+---
+
 [Documentation Home](../index.md) | [API Index](index.md)
 
 # Architecture

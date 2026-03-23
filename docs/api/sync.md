@@ -1,3 +1,10 @@
+---
+layout: default
+title: Sync
+parent: API Documentation
+nav_order: 4
+---
+
 [Documentation Home](../index.md) | [API Index](index.md)
 
 # Sync

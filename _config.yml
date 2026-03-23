@@ -1,0 +1,33 @@
+title: GymTracker Documentation
+description: API reference and user guide for GymTracker
+remote_theme: just-the-docs/just-the-docs
+
+# Source directory
+source: docs
+
+# Enable Jekyll Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Just the Docs theme settings
+color_scheme: light
+nav_sort: case_insensitive
+search_enabled: true
+
+# Footer
+footer_content: "Copyright &copy; 2024 GymTracker. Licensed under an MIT License."
+
+# Exclude from processing
+exclude:
+  - CNAME
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Plugin config
+plugins:
+  - jekyll-remote-theme

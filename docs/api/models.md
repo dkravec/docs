@@ -1,3 +1,10 @@
+---
+layout: default
+title: Models
+parent: API Documentation
+nav_order: 3
+---
+
 [Documentation Home](../index.md) | [API Index](index.md)
 
 # Models
