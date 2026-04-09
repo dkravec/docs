@@ -9,30 +9,46 @@ nav_order: 4
 
 # Sync
 
-Synchronization approach for reliable tracking across offline and online states.
+GymTracker does not have dedicated sync endpoints yet, but the current API already includes several sync-aligned rules.
 
-## Current Direction
+## What Is Already Sync-Aligned
 
-- Offline-first client behavior.
-- Local persistence with SwiftData.
-- Server sync strategy for future multi-device consistency.
+- GymTracker owns stable backend identities for user-created records
+- ExerciseDB-backed exercise overlays are keyed by stable `npId`
+- session delete is soft-delete/tombstone normal path
+- session detail uses a full aggregate payload, which keeps nested ownership and lifecycle explicit
+- mutable root entities use `createdAt`, `updatedAt`, and `deletedAt` patterns in the backend domain
 
-## Practical Expectations
+## What Is Not Implemented Yet
 
-- User actions should work without network access.
-- Local updates should sync when connectivity returns.
-- Conflict handling should preserve data integrity.
+- no dedicated sync endpoints
+- no device-level sync state
+- no conflict-resolution API
+- no offline-first web synchronization layer
+- no iOS remote repository sync implementation yet
+
+## Current Practical Meaning
+
+The current backend contract is the foundation that later iOS repository and sync work should target.
+
+That means:
+
+- exercises should keep using stable `npId` for ExerciseDB-backed overlay lookup
+- user-created exercises should keep using backend UUID identity
+- session payloads should keep using:
+	- user exercise reference -> UUID
+	- ExerciseDB-backed reference -> `npId`
 
 ## Related Pages
 
-- API routes involved in sync: [Endpoints](endpoints.md)
-- Data model requirements: [Models](models.md)
-- System architecture context: [Architecture](architecture.md)
+- Current contract surface: [Endpoints](endpoints.md)
+- Current DTO shapes: [Models](models.md)
+- Deferred sync work and other future items: [Future](future.md)
 
 ---
 
 **Navigation**
 
 - Previous: [Models](models.md)
-- Next: [API Index](index.md)
+- Next: [Future](future.md)
 - Root docs: [Documentation Home](../index.md)

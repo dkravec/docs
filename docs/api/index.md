@@ -9,25 +9,52 @@ has_children: true
 
 # GymTracker API
 
-Reference for architecture, endpoint behavior, core models, and sync design.
+Current API reference for the implemented GymTracker backend and the frontend contract built against it.
+
+This section reflects what exists now:
+
+- GymTracker backend on TypeScript, Express, PostgreSQL, Prisma, and Zod
+- GymTracker-owned auth sessions with no refresh token in MVP
+- unified exercise API backed by GymTracker DB plus internal ExerciseDB lookup
+- full-aggregate session API
+- dashboard summary and session-volume reporting endpoints
 
 ## API Sections
 
 - [Architecture](architecture.md)
-	High-level system components and responsibilities.
+	Current system boundaries, stack, and service responsibilities.
 - [Endpoints](endpoints.md)
-	Request and response behavior for key routes.
+	Implemented route groups and request/response behavior.
 - [Models](models.md)
-	Core data structures used across API and app.
+	Current DTOs and domain shapes exposed through the API.
 - [Sync](sync.md)
-	Offline-first assumptions and synchronization strategy.
+	What is already sync-aligned today, and what is not implemented yet.
+- [Future](future.md)
+	Deferred API-adjacent work that is mentioned in the backend planning set but is not implemented yet.
 
-## Common Workflows
+## Current MVP Surface
 
-- Understand the stack: [Architecture](architecture.md)
-- Integrate client calls: [Endpoints](endpoints.md)
-- Validate payload shapes: [Models](models.md)
-- Design synchronization: [Sync](sync.md)
+- Auth:
+	`POST /api/v1/auth/providers/interact/login`,
+	`POST /api/v1/auth/providers/interact/exchange`,
+	`POST /api/v1/auth/logout`,
+	`GET /api/v1/auth/session`,
+	`GET /api/v1/me`
+- Exercises:
+	`GET /api/v1/exercises`,
+	`POST /api/v1/exercises`,
+	`GET /api/v1/exercises/:exerciseId`,
+	`PATCH /api/v1/exercises/:exerciseId`,
+	`DELETE /api/v1/exercises/:exerciseId`
+- Sessions:
+	`GET /api/v1/sessions`,
+	`POST /api/v1/sessions`,
+	`GET /api/v1/sessions/:sessionId`,
+	`PATCH /api/v1/sessions/:sessionId`,
+	`DELETE /api/v1/sessions/:sessionId`
+- Reports:
+	`GET /api/v1/dashboard/summary`,
+	`GET /api/v1/reports/session-volume`
 
 ---
 
